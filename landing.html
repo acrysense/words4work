@@ -22,6 +22,11 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<a href="index.html" class="header__back">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-back"></use>
+						</svg>
+					</a>
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.svg" alt="WORDS4WORK">
 					</a>
@@ -47,46 +52,90 @@
 			<div class="page-top" id="page-top">
 				<div class="container">
 					<p class="page-top__description">Fast track to perfect English in your <br>professional area</p>
-					<div class="page-top__controls">
-						<a href="#" class="page-top__control btn">Dashboard</a>
-						<a href="catalogue.html" class="page-top__control btn">Catalogue</a>
-						<a href="my-vocab.html" class="page-top__control btn">My Vocabs</a>
-						<a href="add-vocab.html" class="page-top__control btn">+ Add Vocab</a>
-					</div>
 				</div>
 			</div>
 			<!-- end of page top -->
-			<!-- course block -->
-			<div class="course-block" id="course-block">
-				<div class="container">
-					<div class="course-block__top">
-						<h2 class="course-block__heading">Course Blocks</h2>
+			<!-- promo -->
+			<div class="promo" id="promo">
+				<div class="promo__main">
+					<div class="container">
+						<ul class="promo__list">
+							<li class="promo__list-item"><b>Learn</b> actuall skills by watching videos with real-world language</li>
+							<li class="promo__list-item"><b>Practice</b> words and phrasesin the training app</li>
+							<li class="promo__list-item"><b>Check</b> your progress with the huge database of quiz questions</li>
+						</ul>
 					</div>
-					<div class="course-block__block">
-						<h3 class="course-block__subtitle">asdada</h3>
-						<div class="course-block__slider">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="course-block-slide course-block__slide">
-											<div class="course-block-slide__top"></div>
-											<div class="course-block-slide__main">
-												<picture class="course-block-slide__img">
-													<img src="img/course-block-01.jpg" alt="Image">
-												</picture>
-											</div>
-											<div class="course-block-slide__bottom">
-												<span class="course-block-slide__name">asda</span>
-											</div>
-										</div>
-									</div>
+				</div>
+				<div class="container">
+					<div class="promo__slider">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture class="promo__slide">
+										<img src="img/promo-01.jpg" alt="Image">
+									</picture>
 								</div>
 							</div>
+							<div class="swiper-pagination"></div>
 						</div>
+					</div>
+					<div class="promo__bottom">
+						<a href="#" class="promo__btn btn">Start Learning</a>
+						<p class="promo__description">Courses are free. <br>Training app is 49 USD/year.</p>
 					</div>
 				</div>
 			</div>
-			<!-- end of course block -->
+			<!-- end of promo -->
+			<!-- catalogue -->
+			<div class="catalogue" id="catalogue">
+				<div class="container">
+					<h3 class="catalogue__featured">Featured courses</h3>
+					<div class="catalogue__wrapper">
+						<a href="#" class="catalogue-card catalogue__item">
+							<span class="catalogue-card__name">English for Architecture <br>and Construction</span>
+							<p class="catalogue-card__description">Fast track to perfect English <br>in your professional area</p>
+							<picture class="catalogue-card__img">
+								<img src="img/catalogue-01.jpg" alt="Image">
+							</picture>
+							<div class="catalogue-card__inner">
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__help">Words <br>and Phrases:</span>
+									<span class="catalogue-card__value">158</span>
+								</div>
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__help">Quiz <br>Questions:</span>
+									<span class="catalogue-card__value">365</span>
+								</div>
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__status"></span>
+								</div>
+							</div>
+						</a>
+						<a href="#" class="catalogue-card catalogue-card--salad catalogue__item">
+							<span class="catalogue-card__name">English for Art and Design</span>
+							<p class="catalogue-card__description">Fast track to perfect English <br>in your professional area</p>
+							<picture class="catalogue-card__img">
+								<img src="img/catalogue-02.jpg" alt="Image">
+							</picture>
+							<div class="catalogue-card__inner">
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__help">Words <br>and Phrases:</span>
+									<span class="catalogue-card__value">158</span>
+								</div>
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__help">Quiz <br>Questions:</span>
+									<span class="catalogue-card__value">365</span>
+								</div>
+								<div class="catalogue-card__group">
+									<span class="catalogue-card__status"></span>
+								</div>
+							</div>
+						</a>
+					</div>
+					<a href="catalogue.html" class="catalogue__more btn">Catalogue</a>
+				</div>
+			</div>
+			<!-- end of catalogue -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
