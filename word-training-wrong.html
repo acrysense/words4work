@@ -22,6 +22,11 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<a href="index.html" class="header__back">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-back"></use>
+						</svg>
+					</a>
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.svg" alt="WORDS4WORK">
 					</a>
@@ -43,73 +48,64 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- auth -->
-			<div class="auth" id="auth">
+			<!-- word training -->
+			<div class="word-training" id="word-training">
 				<div class="container">
-					<div class="auth__top">
-						<p class="auth__description">Fast track to perfect English <br>in your professional area</p>
-					</div>
-					<form action="#" class="auth-form auth__form">
-						<h2 class="auth__heading">Create New Account</h2>
-						<div class="auth-form__wrapper">
-							<div class="input-field auth-form__input">
-								<label for="auth-register-email" class="input-field__label">Email<span>*</span></label>
-								<div class="input-field__inner">
-									<input type="text" id="auth-register-email" class="input-field__input" placeholder="Enter email">
-								</div>
-							</div>
-							<div class="input-field auth-form__input">
-								<label for="auth-register-username" class="input-field__label">Username<span>*</span></label>
-								<div class="input-field__inner">
-									<input type="text" id="auth-register-username" class="input-field__input" placeholder="Enter username">
-								</div>
-							</div>
-							<div class="input-field auth-form__input">
-								<label for="auth-register-password" class="input-field__label">Password</label>
-								<div class="input-field__inner">
-									<input type="password" id="auth-register-password" class="input-field__input" placeholder="Enter password">
-									<button class="input-field__visibility-btn">
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-eye-filled"></use>
-										</svg>
-										<svg>
-											<use xlink:href="img/sprite.svg#icon-eye"></use>
-										</svg>
-									</button>
-								</div>
-							</div>
-							<p class="auth-form__help">By registering you agree to the <a href="#">Terms of Use</a></p>
-							<button class="auth-form__btn btn">Sign Up</button>
-							<span class="auth-form__create-with">---------- Create account with ----------</span>
-							<ul class="auth__socnav">
-								<li class="auth__socnav-item">
-									<a href="#" class="auth__socnav-link">
-										<svg class="auth__socnav-icon">
-											<use xlink:href="img/sprite.svg#icon-twitter"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="auth__socnav-item">
-									<a href="#" class="auth__socnav-link">
-										<svg class="auth__socnav-icon">
-											<use xlink:href="img/sprite.svg#icon-linkedin"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="auth__socnav-item">
-									<a href="#" class="auth__socnav-link">
-										<svg class="auth__socnav-icon">
-											<use xlink:href="img/sprite.svg#icon-telegram"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
+					<div class="word-training__top">
+						<span class="word-training__value">5/15</span>
+						<div class="word-training__progress">
+							<span class="word-training__progress-item is--done"></span>
+							<span class="word-training__progress-item is--done"></span>
+							<span class="word-training__progress-item is--error"></span>
+							<span class="word-training__progress-item is--done"></span>
+							<span class="word-training__progress-item is--current"></span>
+							<span class="word-training__progress-item"></span>
+							<span class="word-training__progress-item"></span>
+							<span class="word-training__progress-item"></span>
+							<span class="word-training__progress-item"></span>
+							<span class="word-training__progress-item"></span>
 						</div>
-					</form>
-					<p class="auth__help">Already have an account ? <a href="login.html">SignIn</a></p>
+					</div>
+					<div class="word-training__controls">
+						<span class="word-training__language">EN</span>
+						<label for="sound-switch word-training__sound-switch" class="sound-switch">
+							<input type="checkbox" id="sound-switch" class="sound-switch__checkbox" checked>
+							<div class="sound-switch__group">
+								<span class="sound-switch__value">Sound off</span>
+							</div>
+						</label>
+					</div>
+					<div class="word-training__wrapper">
+						<div class="input-field word-training__input">
+							<label for="word-training-definition" class="input-field__label">Definition</label>
+							<div class="input-field__inner">
+								<input type="text" id="word-training-definition" class="input-field__input" placeholder="Enter definition" value="напротив" disabled>
+							</div>
+						</div>
+						<div class="input-field word-training__input is--error">
+							<label for="word-training-vocabulary" class="input-field__label">Vocabulary</label>
+							<div class="input-field__body">
+								<span class="input-field__title">against</span>
+								<span class="input-field__description">the fight against crime</span>
+								<button class="input-field__btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#icon-sound"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="word-training__message">
+							<h4 class="word-training__title">That’s alright.</h4>
+							<p class="word-training__description">Next time</p>
+							<picture class="word-training__icon">
+								<img src="img/icon-like.svg" alt="Icon">
+							</picture>
+						</div>
+						<a href="#" class="word-training__btn btn">Next</a>
+					</div>
 				</div>
 			</div>
-			<!-- end of auth -->
+			<!-- end of word training -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
