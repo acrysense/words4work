@@ -22,6 +22,11 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<a href="index.html" class="header__back">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-back"></use>
+						</svg>
+					</a>
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.svg" alt="WORDS4WORK">
 					</a>
@@ -43,44 +48,58 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- auth -->
-			<div class="auth" id="auth">
+			<!-- practice questions -->
+			<div class="practice-questions" id="practice-questions">
 				<div class="container">
-					<div class="auth__top">
-						<p class="auth__description">Fast track to perfect English <br>in your professional area</p>
+					<div class="practice-questions__top">
+						<span class="practice-questions__value">5/15</span>
+						<div class="practice-questions__progress">
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--error"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--current"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+						</div>
 					</div>
-					<form action="#" class="auth-form auth__form">
-						<h2 class="auth__heading">Forgot Password!</h2>
-						<p class="auth__help">Reset Password</p>
-						<div class="auth-notice auth__notice">
-							<picture class="auth-notice__icon">
-								<img src="img/icon-email.svg" alt="Icon">
-							</picture>
-							<div class="auth-notice__wrapper">
-								<p class="auth-notice__description">Enter your email and instructions <br>will be sent to you!</p>
-							</div>
+					<div class="practice-questions__wrapper">
+						<picture class="practice-questions__img">
+							<img src="img/practice-questions.jpg" alt="Image">
+						</picture>
+						<div class="practice-questions__notice">
+							<p>What are the main strategies mentioned in the marketing plan for the product launch?</p>
 						</div>
-						<div class="auth-form__wrapper">
-							<div class="input-field auth-form__input">
-								<label for="auth-forgot-password-email" class="input-field__label">Email</label>
-								<div class="input-field__inner">
-									<input type="email" id="auth-forgot-password-email" class="input-field__input" placeholder="Enter email">
-								</div>
-							</div>
-							<div class="circle-checkbox auth-form__checkbox">
-								<input type="checkbox" class="circle-checkbox__input" id="remember-me" checked>
-								<label for="remember-me" class="circle-checkbox__group">
-									<span class="circle-checkbox__icon"></span>
-									<span class="circle-checkbox__title">Remember me</span>
-								</label>
-							</div>
-							<button class="auth-form__btn btn">Send Reset Link</button>
+						<div class="practice-questions__answers">
+							<div class="practice-questions__answer is--error">Focusing solely on traditional advertising methods.</div>
 						</div>
-					</form>
-					<p class="auth__help">Wait, I remember my password... <a href="login.html">Click here</a></p>
+						<div class="practice-questions__message is--error">
+							<h3 class="practice-questions__message-title">This is incorrect.</h3>
+							<p class="practice-questions__message-description">This answer suggests developing a new product, which is not the focus of the discussion.</p>
+						</div>
+						<a href="#" class="practice-questions__btn btn">Next Question</a>
+						<div class="questions-level">
+							<button class="questions-level__btn">Too <br>Hard?</button>
+							<div class="questions-level__main">
+								<span class="questions-level__value">Progress 75%</span>
+								<svg class="questions-level__icon">
+									<use xlink:href="img/sprite.svg#icon-info"></use>
+								</svg>
+							</div>
+							<button class="questions-level__btn">Too <br>Easy?</button>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- end of auth -->
+			<!-- end of practice questions -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

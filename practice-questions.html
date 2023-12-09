@@ -22,6 +22,11 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<a href="index.html" class="header__back">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-back"></use>
+						</svg>
+					</a>
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.svg" alt="WORDS4WORK">
 					</a>
@@ -43,44 +48,60 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- auth -->
-			<div class="auth" id="auth">
+			<!-- practice questions -->
+			<div class="practice-questions" id="practice-questions">
 				<div class="container">
-					<div class="auth__top">
-						<p class="auth__description">Fast track to perfect English <br>in your professional area</p>
+					<div class="practice-questions__top">
+						<span class="practice-questions__value">5/15</span>
+						<div class="practice-questions__progress">
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--error"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--current"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+							<span class="practice-questions__progress-item"></span>
+						</div>
 					</div>
-					<form action="#" class="auth-form auth__form">
-						<h2 class="auth__heading">Forgot Password!</h2>
-						<p class="auth__help">Reset Password</p>
-						<div class="auth-notice auth__notice">
-							<picture class="auth-notice__icon">
-								<img src="img/icon-email.svg" alt="Icon">
-							</picture>
-							<div class="auth-notice__wrapper">
-								<p class="auth-notice__description">Enter your email and instructions <br>will be sent to you!</p>
-							</div>
+					<div class="practice-questions__wrapper">
+						<h3 class="practice-questions__title">Read the dialogue and answer the question:</h3>
+						<picture class="practice-questions__img">
+							<img src="img/practice-questions.jpg" alt="Image">
+						</picture>
+						<div class="practice-questions__dialog">
+							<p class="practice-questions__dialog-item">
+								<b>Alex:</b> Good morning, everyone. Let's get started with today's meeting. We're here to discuss our upcoming product launch.
+								<br><br>
+								<b>Eva:</b> Absolutely. Our marketing campaign needs to be top-notch to create a buzz in the market.
+								<br><br>
+								<b>Chris:</b> I agree. And from the sales perspective, we need to ensure that our team is well-prepared to handle customer inquiries and close deals.
+								<br><br>
+								<b>Alex:</b> Agreed. Eva, can you give us an overview of the marketing plan?
+								<br><br>
+								<b>Eva:</b> Of course. We'll focus on a mix of digital and traditional channels to reach our target audience. Social media, email marketing, and collaborations with influencers will be our main strategies.
+							</p>
 						</div>
-						<div class="auth-form__wrapper">
-							<div class="input-field auth-form__input">
-								<label for="auth-forgot-password-email" class="input-field__label">Email</label>
-								<div class="input-field__inner">
-									<input type="email" id="auth-forgot-password-email" class="input-field__input" placeholder="Enter email">
-								</div>
-							</div>
-							<div class="circle-checkbox auth-form__checkbox">
-								<input type="checkbox" class="circle-checkbox__input" id="remember-me" checked>
-								<label for="remember-me" class="circle-checkbox__group">
-									<span class="circle-checkbox__icon"></span>
-									<span class="circle-checkbox__title">Remember me</span>
-								</label>
-							</div>
-							<button class="auth-form__btn btn">Send Reset Link</button>
+						<div class="practice-questions__notice">
+							<p>What are the main strategies mentioned in the marketing plan for the product launch?</p>
 						</div>
-					</form>
-					<p class="auth__help">Wait, I remember my password... <a href="login.html">Click here</a></p>
+						<div class="practice-questions__answers">
+							<div class="practice-questions__answer">Hiring additional staff to handle customer inquiries.</div>
+							<div class="practice-questions__answer">Focusing solely on traditional advertising methods.</div>
+							<div class="practice-questions__answer is--selected">Using social media, email marketing, and collaborations with influencers as the main strategies for the marketing campaign.</div>
+						</div>
+						<a href="#" class="practice-questions__btn btn">Check</a>
+					</div>
 				</div>
 			</div>
-			<!-- end of auth -->
+			<!-- end of practice questions -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->

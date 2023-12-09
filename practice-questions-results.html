@@ -22,6 +22,11 @@
 		<header class="header" id="header">
 			<div class="container">
 				<div class="header__wrapper">
+					<a href="index.html" class="header__back">
+						<svg>
+							<use xlink:href="img/sprite.svg#icon-back"></use>
+						</svg>
+					</a>
 					<a href="index.html" class="header__logotype">
 						<img src="img/logotype.svg" alt="WORDS4WORK">
 					</a>
@@ -43,44 +48,42 @@
 		<!-- end of header -->
 		<!-- content -->
 		<div class="wrapper__content">
-			<!-- auth -->
-			<div class="auth" id="auth">
+			<!-- practice questions -->
+			<div class="practice-questions" id="practice-questions">
 				<div class="container">
-					<div class="auth__top">
-						<p class="auth__description">Fast track to perfect English <br>in your professional area</p>
+					<div class="practice-questions__top">
+						<span class="practice-questions__value">15/15</span>
+						<div class="practice-questions__progress">
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--error"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--error"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+							<span class="practice-questions__progress-item is--done"></span>
+						</div>
 					</div>
-					<form action="#" class="auth-form auth__form">
-						<h2 class="auth__heading">Forgot Password!</h2>
-						<p class="auth__help">Reset Password</p>
-						<div class="auth-notice auth__notice">
-							<picture class="auth-notice__icon">
-								<img src="img/icon-email.svg" alt="Icon">
-							</picture>
-							<div class="auth-notice__wrapper">
-								<p class="auth-notice__description">Enter your email and instructions <br>will be sent to you!</p>
-							</div>
-						</div>
-						<div class="auth-form__wrapper">
-							<div class="input-field auth-form__input">
-								<label for="auth-forgot-password-email" class="input-field__label">Email</label>
-								<div class="input-field__inner">
-									<input type="email" id="auth-forgot-password-email" class="input-field__input" placeholder="Enter email">
-								</div>
-							</div>
-							<div class="circle-checkbox auth-form__checkbox">
-								<input type="checkbox" class="circle-checkbox__input" id="remember-me" checked>
-								<label for="remember-me" class="circle-checkbox__group">
-									<span class="circle-checkbox__icon"></span>
-									<span class="circle-checkbox__title">Remember me</span>
-								</label>
-							</div>
-							<button class="auth-form__btn btn">Send Reset Link</button>
-						</div>
-					</form>
-					<p class="auth__help">Wait, I remember my password... <a href="login.html">Click here</a></p>
+					<div class="practice-questions__results is--done">
+						<picture class="practice-questions__results-img">
+							<img src="img/stars.gif" alt="Image">
+						</picture>
+						<h4 class="practice-questions__results-title">Correct <br>Answers: <br>13/15</h4>
+					</div>
+					<div class="practice-questions__bottom">
+						<a href="#" class="practice-questions__control btn">Finish</a>
+						<a href="#" class="practice-questions__control btn">New training</a>
+					</div>
 				</div>
 			</div>
-			<!-- end of auth -->
+			<!-- end of practice questions -->
 		</div>
 		<!-- end of content -->
 		<!-- footer -->
